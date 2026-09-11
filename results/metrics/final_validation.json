@@ -1,0 +1,205 @@
+{
+  "authoritative": true,
+  "locked_model_policy": "No model modification or retraining based on test results",
+  "artifact_sha256_before": "6d6b1ad1274d917d4cd4a169412ba369e4848505729d6124788a8768a86e6cd7",
+  "artifact_sha256_after": "6d6b1ad1274d917d4cd4a169412ba369e4848505729d6124788a8768a86e6cd7",
+  "artifact_unchanged": true,
+  "random_state": 42,
+  "test_split_exact_match": true,
+  "sample_counts": {
+    "full": {
+      "n": 2149,
+      "classes": {
+        "0": 1389,
+        "1": 760
+      },
+      "prevalence": 0.35365286179618427
+    },
+    "development": {
+      "n": 1719,
+      "classes": {
+        "0": 1111,
+        "1": 608
+      },
+      "prevalence": 0.35369400814426993
+    },
+    "initial_train": {
+      "n": 1375,
+      "classes": {
+        "0": 889,
+        "1": 486
+      },
+      "prevalence": 0.35345454545454547
+    },
+    "selection_validation": {
+      "n": 344,
+      "classes": {
+        "0": 222,
+        "1": 122
+      },
+      "prevalence": 0.3546511627906977
+    },
+    "test": {
+      "n": 430,
+      "classes": {
+        "0": 278,
+        "1": 152
+      },
+      "prevalence": 0.35348837209302325
+    }
+  },
+  "features": {
+    "included": [
+      "Age",
+      "Gender",
+      "Ethnicity",
+      "EducationLevel",
+      "BMI",
+      "Smoking",
+      "AlcoholConsumption",
+      "PhysicalActivity",
+      "DietQuality",
+      "SleepQuality",
+      "FamilyHistoryAlzheimers",
+      "CardiovascularDisease",
+      "Diabetes",
+      "Depression",
+      "HeadInjury",
+      "Hypertension",
+      "SystolicBP",
+      "DiastolicBP",
+      "CholesterolTotal",
+      "CholesterolLDL",
+      "CholesterolHDL",
+      "CholesterolTriglycerides",
+      "MMSE",
+      "FunctionalAssessment",
+      "MemoryComplaints",
+      "BehavioralProblems",
+      "ADL",
+      "Confusion",
+      "Disorientation",
+      "PersonalityChanges",
+      "DifficultyCompletingTasks",
+      "Forgetfulness"
+    ],
+    "excluded": {
+      "Diagnosis": "prediction target",
+      "PatientID": "unique identifier",
+      "DoctorInCharge": "constant confidential metadata"
+    }
+  },
+  "leakage_audit": {
+    "included_feature_identical_to_target": [],
+    "identifier_absent": true,
+    "constant_metadata_absent": true,
+    "proximal_proxy_risk": [
+      "FunctionalAssessment",
+      "ADL",
+      "MMSE",
+      "MemoryComplaints",
+      "BehavioralProblems"
+    ],
+    "measurement_timing_verified": false
+  },
+  "threshold": {
+    "value": 0.5,
+    "selection": "fixed classifier default; no optimization on validation or test"
+  },
+  "test_metrics": {
+    "roc_auc": 0.9408131389625142,
+    "pr_auc_average_precision": 0.9222378040847294,
+    "accuracy": 0.9511627906976744,
+    "sensitivity_recall": 0.9210526315789473,
+    "specificity": 0.9676258992805755,
+    "precision_ppv": 0.9395973154362416,
+    "negative_predictive_value": 0.9572953736654805,
+    "f1": 0.9302325581395349,
+    "brier_score": 0.05320211375518377,
+    "log_loss": 0.22934089745972785,
+    "expected_calibration_error_10_equal_width_bins": 0.04993841877424824,
+    "threshold": 0.5,
+    "confusion_matrix": {
+      "tn": 269,
+      "fp": 9,
+      "fn": 12,
+      "tp": 140
+    }
+  },
+  "bootstrap_95_ci": {
+    "roc_auc": [
+      0.9093095122841691,
+      0.9694479620520121
+    ],
+    "pr_auc_average_precision": [
+      0.8732295601272552,
+      0.962350286503188
+    ],
+    "brier_score": [
+      0.036635661731848124,
+      0.07168990873063673
+    ]
+  },
+  "original_validation_scores": {
+    "logistic_regression": 0.895030276177817,
+    "random_forest": 0.9496012405848472
+  },
+  "cross_validation": [
+    {
+      "model": "logistic_regression",
+      "folds": 5,
+      "roc_auc_mean": 0.903143984118435,
+      "roc_auc_sd": 0.014151160811168653,
+      "pr_auc_mean": 0.8457841685972458,
+      "pr_auc_sd": 0.0334636888860919,
+      "accuracy_mean": 0.8225794969150451,
+      "accuracy_sd": 0.01962955668705268,
+      "sensitivity_mean": 0.8140495867768595,
+      "sensitivity_sd": 0.032840866053131704,
+      "precision_mean": 0.7241207905979457,
+      "precision_sd": 0.04433601622521314,
+      "f1_mean": 0.7649656101622814,
+      "f1_sd": 0.01450701498921237,
+      "brier_score_mean": 0.12342362423717597,
+      "brier_score_sd": 0.01493289880801545
+    },
+    {
+      "model": "random_forest",
+      "folds": 5,
+      "roc_auc_mean": 0.9548043859074848,
+      "roc_auc_sd": 0.010625278069122085,
+      "pr_auc_mean": 0.9350721343976381,
+      "pr_auc_sd": 0.020401284986932656,
+      "accuracy_mean": 0.951717065563767,
+      "accuracy_sd": 0.008858622801682856,
+      "sensitivity_mean": 0.9128031432055277,
+      "sensitivity_sd": 0.02376613714536018,
+      "precision_mean": 0.9496305812554617,
+      "precision_sd": 0.0258620987985126,
+      "f1_mean": 0.9304591298712163,
+      "f1_sd": 0.012353499327486576,
+      "brier_score_mean": 0.08743968414073824,
+      "brier_score_sd": 0.004957940048956783
+    }
+  ],
+  "calibration": "5-fold cross-validated sigmoid",
+  "duplicates": {
+    "exact_feature_duplicates_across_development_test": 0,
+    "near_duplicate_definition": "mean absolute distance after min-max scaling all features <= 0.01",
+    "near_duplicates_across_development_test": 0,
+    "minimum_cross_split_normalized_distance": 0.08246961389460075,
+    "median_nearest_cross_split_normalized_distance": 0.14761357037815742,
+    "duplicate_predictor_rows_in_source": 0
+  },
+  "permutation_sanity": {
+    "runs": 25,
+    "roc_auc_mean": 0.5083178720181749,
+    "roc_auc_sd": 0.0563776387937189,
+    "pr_auc_mean": 0.3692048682287009,
+    "pr_auc_sd": 0.04039075060475256
+  },
+  "shap": {
+    "generated": true,
+    "explanation_model": "uncalibrated selected random forest refit on development set"
+  }
+}

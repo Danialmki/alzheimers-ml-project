@@ -1,0 +1,8 @@
+{
+  "selected_model": "random_forest",
+  "validation_roc_auc": {
+    "logistic_regression": 0.895030276177817,
+    "random_forest": 0.9496012405848472
+  },
+  "random_state": 42
+}

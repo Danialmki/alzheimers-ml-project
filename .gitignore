@@ -1,0 +1,39 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Downloaded and derived datasets (see README.md)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Reproducible generated model artifacts
+models/*
+!models/.gitkeep
+
+# Generated publication binaries
+paper/*.pdf
+

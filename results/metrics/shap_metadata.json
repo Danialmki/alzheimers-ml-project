@@ -1,0 +1,9 @@
+{
+  "observations":"locked test set",
+  "n_observations":430,
+  "explainer":"shap.TreeExplainer",
+  "model":"uncalibrated selected random forest refit on development set",
+  "feature_names":"transformed feature names from fitted preprocessor",
+  "representative_test_position":146,
+  "representative_probability_from_final_calibrated_model":0.0964878592
+}

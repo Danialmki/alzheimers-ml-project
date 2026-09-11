@@ -1,0 +1,40 @@
+rank,feature,mean_absolute_shap,spearman_feature_value_vs_shap,descriptive_direction
+1,FunctionalAssessment,0.1432231428504913,-0.7911119043369623,higher values tended away from the positive model output
+2,ADL,0.1325600572183431,-0.8143252312356073,higher values tended away from the positive model output
+3,MemoryComplaints,0.0874567870025955,0.7158580477100931,higher values tended toward the positive model output
+4,MMSE,0.0822500233677333,-0.7231205421136895,higher values tended away from the positive model output
+5,BehavioralProblems,0.0565700697998802,0.6928221965352126,higher values tended toward the positive model output
+6,CholesterolHDL,0.0087739278659151,0.8540372701274876,higher values tended toward the positive model output
+7,SleepQuality,0.0075483054797175,-0.8492471754221066,higher values tended away from the positive model output
+8,CholesterolTriglycerides,0.0067559458969819,0.8088385903202716,higher values tended toward the positive model output
+9,Age,0.0063133612779205,-0.7818530807279787,higher values tended away from the positive model output
+10,SystolicBP,0.0055738660381798,-0.7613239006066018,higher values tended away from the positive model output
+11,DietQuality,0.0055097169377554,-0.042585688201616546,no reliable monotonic direction in this test sample
+12,CholesterolLDL,0.0052642917564897,-0.8284270092396137,higher values tended away from the positive model output
+13,CholesterolTotal,0.0051032014931152,0.15740759537230697,higher values tended toward the positive model output
+14,BMI,0.005075417277158,0.42934044318601594,higher values tended toward the positive model output
+15,PhysicalActivity,0.0047542096251746,0.33957065434969713,higher values tended toward the positive model output
+16,DiastolicBP,0.0045713698739636,0.46445224830329157,higher values tended toward the positive model output
+17,AlcoholConsumption,0.004560207633501,-0.3402561826022679,higher values tended away from the positive model output
+18,EducationLevel_0,0.002499678142021,0.6913551214086223,higher values tended toward the positive model output
+19,Ethnicity_2,0.0022796291827817,0.5552264496262561,higher values tended toward the positive model output
+20,CardiovascularDisease,0.0018397719190342,0.6411695426973268,higher values tended toward the positive model output
+21,Hypertension,0.0013478192539514,0.6293477160888535,higher values tended toward the positive model output
+22,Ethnicity_1,0.0013236477452619,-0.5720979918164613,higher values tended away from the positive model output
+23,EducationLevel_1,0.001321865487073,-0.7947877727877237,higher values tended away from the positive model output
+24,FamilyHistoryAlzheimers,0.0012680217413056,-0.7369192607258516,higher values tended away from the positive model output
+25,EducationLevel_2,0.0010631893279955,-0.5113481295146617,higher values tended away from the positive model output
+26,Ethnicity_0,0.0010183736290435,0.6792216059886689,higher values tended toward the positive model output
+27,PersonalityChanges,0.0009943150755207,-0.5165107022286788,higher values tended away from the positive model output
+28,Forgetfulness,0.0008645155029524,-0.03835922014891447,no reliable monotonic direction in this test sample
+29,Disorientation,0.000860520086108,-0.6384470115422733,higher values tended away from the positive model output
+30,DifficultyCompletingTasks,0.0008442650047482,0.4279789063260467,higher values tended toward the positive model output
+31,Diabetes,0.0008303585880086,-0.42138256813792635,higher values tended away from the positive model output
+32,Depression,0.0008137486496287,0.6027507782126222,higher values tended toward the positive model output
+33,EducationLevel_3,0.0008020823142845,0.13986970884018035,no reliable monotonic direction in this test sample
+34,Gender_0,0.00073612761844,0.4840198092162043,higher values tended toward the positive model output
+35,Smoking,0.0006061662193996,-0.16340971508917507,higher values tended away from the positive model output
+36,Gender_1,0.0005856558869169,-0.0854924256483012,no reliable monotonic direction in this test sample
+37,Confusion,0.0005617826423536,-0.5383965258016197,higher values tended away from the positive model output
+38,HeadInjury,0.0005087992677822,-0.463151572151279,higher values tended away from the positive model output
+39,Ethnicity_3,0.0003968301330787,-0.3256538968099712,higher values tended away from the positive model output
